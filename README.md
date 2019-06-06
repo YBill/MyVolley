@@ -1,5 +1,7 @@
 # MyVolley
-自己实现的Volley，具体实现是按照Volley的流程，不过特别简单，能正常请求http请求。         主要是理清逻辑，看下谷歌工程师是怎样编码的。
+##### 这个是自己实现的Volley，具体实现是按照Volley的流程，不过特别简洁，能正常请求http请求。不能用到正常的线上项目。主要是理清逻辑，看下谷歌工程师是怎样编码的。
+
+# 下面是对 Volley（1.1.1版本） 源码的分析。
 
 - **Network** 接口，是用来请求网络数据的，传入我们的请求参数 Request，返回响应结果 NetworkResponse
 - **BasicNetwork** Network的实现类，需要传入一个 HttpStack 参数，然后创建一个 AdaptedHttpStack 类 ，并将 HttpStack 参数传给他，通过 AdaptedHttpStack 分发具体的网络请求。并将 AdaptedHttpStack 执行请求的 HttpResponse 对象包装为 NetworkResponse 对象。
