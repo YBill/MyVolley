@@ -12,6 +12,8 @@ import java.util.TimeZone;
 /**
  * Created by Bill on 2019/6/5.
  */
+
+/** Utility methods for parsing HTTP headers. */
 public class HttpHeaderParser {
 
     static final String HEADER_CONTENT_TYPE = "Content-Type";
