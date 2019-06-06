@@ -17,6 +17,8 @@ import java.io.UnsupportedEncodingException;
 /**
  * Created by Bill on 2019/6/5.
  */
+ 
+ /** 自己实现通过Gson解析json **/
 public class GsonRequest<T> extends Request<T> {
 
     private final Object mLock = new Object();
